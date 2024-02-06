@@ -12,11 +12,9 @@ function getComputerChoice() {
   return plays[Math.floor(Math.random * plays.length)];
 }
 
-let userChoice = prompt("Choose (rock, paper, scissors)").toLowerCase();
-let computerChoice = getComputerChoice();
-
 function playRound() {
-  
+  let userChoice = prompt("Choose (rock, paper, scissors)").toLowerCase();
+  let computerChoice = getComputerChoice();
   let result = "";
 
   switch(userChoice) {
@@ -36,5 +34,14 @@ function playRound() {
       if (computerChoice === "paper") result = "you won, Scissors beat paper";
       if (computerChoice === "scissors") result = "draw";
       break;
+  }
+
+  return result;
+}
+
+function playGame() {
+  for(let i = 0; i < 5; i++) {
+    let result = playRound();
+    alert(result);
   }
 }
