@@ -2,4 +2,108 @@
     padding:0;
     margin:0;
 
+    font-family: 'Protest Strike',sans-serif;
+    text-shadow: 0 0 5px #000,
+                 0 0 5px #000;
+
+}
+
+
+body {
+
+   background-color:#f2f2f2;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+
+    background-color: #c1c7ff;
+
+    height: 70vh;
+    width: 50vw;
+    border-radius: 10px;
+    border: 2px solid #0002;
+    box-shadow: 0 0 15px #000;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.game-screen {
+    background-color: #8383f3;
+
+    height: 20vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color:#fff;
+    font-size: 32px;
+}
+
+
+.game-buttons {
+
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 2rem;
+
+    height: 15vh;
+    width: 80%;
+    
+    margin: 4rem;
+
+    background-color: #8383f3;
+    padding: 3rem;
+
+}
+
+.game-buttons li{
+    flex: 1;
+
+    display: flex;
+
+
+    box-shadow: 0 0 15px #333;
+    background-color:#776dd0;
+    padding: 3rem;
+
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.game-buttons li button{
+    flex:1;
+}
+
+.game-button {
+
+    cursor: pointer;
+    border: transparent;
+    background-color: transparent;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 10vh;
+    aspect-ratio: 1/1;
+}
+
+.game-button.scissors {
+    background-image: url(../images/scissors.png);
+}
+.game-button.rock {
+    background-image: url(../images/stone.png);
+}
+.game-button.paper {
+    background-image: url(../images/scroll.png);
 }

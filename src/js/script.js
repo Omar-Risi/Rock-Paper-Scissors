@@ -13,8 +13,8 @@ function getComputerChoice() {
   return randomIndex;
 }
 
-function playRound() {
-  let userChoice = prompt("Choose (rock, paper, scissors)").toLowerCase();
+function playRound(choice) {
+  let userChoice = choice;
   let computerChoice = getComputerChoice();
   let result = "";
 
@@ -36,15 +36,4 @@ function playRound() {
 
   return result;
 }
-
-
-function playGame() {
-  for(let i = 0; i < 5; i++) {
-    let result = playRound();
-    alert(result);
-  }
-}
-
-//play game
-playGame();
 
