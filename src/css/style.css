@@ -11,7 +11,7 @@
 
 body {
 
-   background-color:#f2f2f2;
+   background-color:#ced3ff;
     height: 100vh;
     display:flex;
     justify-content: center;
@@ -37,7 +37,7 @@ body {
 
 .game-screen {
     background-color: #8383f3;
-
+    box-shadow: 0 0 10px #000;
     height: 20vh;
     width: 30vw;
     display: flex;
@@ -68,10 +68,7 @@ body {
 
 .game-buttons li{
     flex: 1;
-
     display: flex;
-
-
     box-shadow: 0 0 15px #333;
     background-color:#776dd0;
     padding: 3rem;
